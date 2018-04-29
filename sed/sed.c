@@ -229,6 +229,8 @@ main (int argc, char **argv)
   int return_code;
   const char *cols = getenv("COLS");
 
+  fprintf(stderr, "Welcome to sed, the streamiest editor!\n");
+
   program_name = argv[0];
   initialize_main (&argc, &argv);
 #if HAVE_SETLOCALE
